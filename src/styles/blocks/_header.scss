@@ -1,0 +1,104 @@
+.header {
+    color: #fff;
+    line-height: 21px;
+
+    &__top {
+        background: get-color('header_top');
+
+        @media (max-width: $break_xl) {
+            display: none;
+        }
+    }
+
+    &__container-top {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 35px 20px;
+
+        >* {
+            &:not(:last-child) {
+                padding-right: 30px;
+            }
+        }
+    }
+
+    &__container-bottom {
+        position: relative;
+
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        @media (max-width: $break_xl) {
+            justify-content: space-between;
+            padding: 15px 20px;
+
+            box-shadow: $box-shadow;
+        }
+    }
+
+    &__logo {
+        position: absolute;
+        top: -80px;
+        left: 20px;
+
+        width: 168px;
+        height: 135px;
+
+        @media (max-width: $break_xl) {
+            display: none;
+        }
+    }
+
+    &__mobile-logo {
+        display: none;
+        width: 198px;
+        height: 45px;
+
+        @media (max-width: $break_xl) {
+            display: block;
+        }
+
+        @media (max-width: $break_sm) {
+            display: none;
+        }
+    }
+
+    &__phones {
+        display: none;
+
+        @media (max-width: $break_xl) {
+            display: flex;
+        }
+    }
+
+    &__phone {
+        color: #545454;
+    }
+}
+
+// styles for fixed header
+.header__fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    background: #fff;
+    box-shadow: $box-shadow;
+
+    animation: show-header 1s;
+
+    .header__container-bottom {
+        justify-content: space-between;
+    }
+
+    .header__logo {
+        display: none;
+    }
+
+    .header__mobile-logo {
+        display: flex;
+    }
+}

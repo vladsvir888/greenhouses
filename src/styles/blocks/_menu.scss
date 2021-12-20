@@ -1,0 +1,47 @@
+.menu {
+    &__list {
+        display: flex;
+
+        @media (max-width: $break_xl) {
+            display: none;
+        }
+    }
+
+    &__item {
+        padding: 20px;
+    }
+
+    &__link {
+        position: relative;
+
+        text-transform: uppercase;
+        font-weight: 500;
+        color: get-color('text');
+
+        transition: color $transition-time;
+
+        &::after {
+            position: absolute;
+            bottom: -8px;
+            left: 50%;
+
+            height: 3px;
+            width: 0;
+
+            background-color: get-color('link_hover');
+            transform: translateX(-50%);
+
+            transition: width $transition-time;
+
+            content: '';
+        }
+
+        &:hover {
+            &:after {
+                width: 100%;
+            }
+
+            color: get-color('link_hover');
+        }
+    }
+}

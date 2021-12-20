@@ -1,0 +1,13 @@
+.phones {
+    display: flex;
+    flex-direction: column;
+
+    &__phone {
+        font-weight: 700;
+        color: #fff;
+    }
+
+    &__text {
+        font-size: 13px;
+    }
+}

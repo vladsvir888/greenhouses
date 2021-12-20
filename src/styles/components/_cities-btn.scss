@@ -1,0 +1,17 @@
+.cities-btn {
+    display: flex;
+
+    color: #fff;
+
+    &__text {
+        margin-left: 10px;
+
+        border-bottom: 1px dotted #fff;
+
+        transition: color $transition-time;
+
+        &:hover {
+            color: rgba(255, 255, 255, .7);
+        }
+    }
+}

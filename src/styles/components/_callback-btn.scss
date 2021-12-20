@@ -1,0 +1,21 @@
+.callback-btn {
+    display: flex;
+    align-items: center;
+    padding: 12px 20px;
+
+    color: get-color('text');
+    font-weight: 500;
+
+    background: get-color('accent');
+    border-radius: 20px;
+
+    transition: background-color $transition-time;
+
+    &:hover {
+        background-color: #fff170;
+    }
+
+    &__text {
+        padding-left: 10px;
+    }
+}
