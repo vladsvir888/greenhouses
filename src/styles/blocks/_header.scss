@@ -5,7 +5,7 @@
     &__top {
         background: get-color('header_top');
 
-        @media (max-width: $break_xl) {
+        @media (max-width: $break_xl) { // hide header_top
             display: none;
         }
     }
@@ -38,6 +38,12 @@
         }
     }
 
+    &__logo-link { 
+        @media (max-width: $break_xl) { // hide main logo
+            display: none;
+        }
+    }
+
     &__logo {
         position: absolute;
         top: -80px;
@@ -45,10 +51,6 @@
 
         width: 168px;
         height: 135px;
-
-        @media (max-width: $break_xl) {
-            display: none;
-        }
     }
 
     &__mobile-logo {
@@ -56,20 +58,20 @@
         width: 198px;
         height: 45px;
 
-        @media (max-width: $break_xl) {
-            display: block;
-        }
-
-        @media (max-width: $break_sm) {
-            display: none;
+        @media (max-width: $break_xl) { // show mobile logo
+            display: flex;
         }
     }
 
     &__phones {
         display: none;
 
-        @media (max-width: $break_xl) {
+        @media (max-width: $break_xl) { // show block with phones
             display: flex;
+        }
+
+        @media (max-width: $break_sm) {
+            display: none;
         }
     }
 
@@ -94,8 +96,14 @@
         justify-content: space-between;
     }
 
-    .header__logo {
+    .header__logo-link {
         display: none;
+    }
+
+    .header__phones {
+        @media (max-width: $break_sm) {
+            display: none;
+        }
     }
 
     .header__mobile-logo {

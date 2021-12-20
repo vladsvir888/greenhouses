@@ -11,11 +11,19 @@
 
     transition: background-color $transition-time;
 
+    &__icon {
+        transition: transform 0.8s;
+    }
+
     &:hover {
-        background-color: #fff170;
+        background-color: get-color('bgc_hover_link');
+
+        .callback-btn__icon {
+            transform: rotate(360deg);
+        }
     }
 
     &__text {
-        padding-left: 10px;
+        padding-left: 8px;
     }
 }

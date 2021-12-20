@@ -5,6 +5,10 @@
 
     background: url('../../assets/images/promo/promo_bg.jpg') no-repeat 50% / cover;
 
+    @media (max-width: $break_sm) {
+        padding: 50px 0;
+    }
+
     &__content {
         display: flex;
         flex-direction: column;
@@ -20,11 +24,20 @@
 
     &__title {
         font-size: 38px;
+
+        @media (max-width: $break_sm) {
+            font-size: 30px;
+        }
     }
 
     &__form {
         display: flex;
         flex-direction: row;
+
+        @media (max-width: $break_sm) {
+            flex-direction: column;
+            width: 200px;
+        }
 
         >* {
             padding: 12px 20px;
@@ -38,6 +51,15 @@
 
         border: none;
         outline: none;
+
+        @media (max-width: $break_sm) {
+            margin-right: 0;
+            margin-bottom: 10px;
+        }
+    }
+
+    &__form-icon {
+        transition: transform $transition-time;
     }
 
     &__form-btn {
@@ -45,7 +67,17 @@
         align-items: center;
         color: get-color('text');
 
-        background: get-color('accent');
+        background-color: get-color('accent');
+
+        transition: background-color $transition-time;
+
+        &:hover {
+            background-color: get-color('bgc_hover_link');
+
+            .promo__form-icon {
+                transform: translateX(3px);
+            }
+        }
     }
 
     &__form-text {
