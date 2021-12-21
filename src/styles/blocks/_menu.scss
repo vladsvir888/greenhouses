@@ -32,7 +32,7 @@
             height: 3px;
             width: 0;
 
-            background-color: get-color('link_hover');
+            background-color: get-color('menu-link_hover');
             transform: translateX(-50%);
 
             transition: width $transition-time;
@@ -45,7 +45,7 @@
                 width: 100%;
             }
 
-            color: get-color('link_hover');
+            color: get-color('menu-link_hover');
         }
     }
 }

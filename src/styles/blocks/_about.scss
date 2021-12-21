@@ -1,0 +1,43 @@
+.about {
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+
+        @media (max-width: $break_md) {
+            flex-direction: column;
+        }
+
+        @media (max-width: $break_sm) {
+            margin-top: 30px;
+        }
+    }
+
+    &__item {
+        width: 45%;
+
+        line-height: 20px;
+
+        >* {
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+        }
+
+        ul {
+            padding-left: 20px;
+        
+            list-style-type: square;
+
+            >* {
+                &:not(:last-child) {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+
+        @media (max-width: $break_md) {
+            width: 100%;
+        }
+    }
+}

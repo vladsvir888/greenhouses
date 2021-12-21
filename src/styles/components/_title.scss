@@ -1,0 +1,19 @@
+.title {
+    position: relative;
+
+    padding-bottom: 20px;
+
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 45px;
+
+    &::after {
+        @include lineUnderTheTitle;
+    }
+
+    @media (max-width: $break_sm) {
+        font-size: 18px;
+        line-height: 32px;
+    }
+}

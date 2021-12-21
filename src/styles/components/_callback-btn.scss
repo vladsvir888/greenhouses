@@ -9,15 +9,11 @@
     background: get-color('accent');
     border-radius: 20px;
 
-    transition: background-color $transition-time;
-
     &__icon {
         transition: transform 0.8s;
     }
 
     &:hover {
-        background-color: get-color('bgc_hover_link');
-
         .callback-btn__icon {
             transform: rotate(360deg);
         }

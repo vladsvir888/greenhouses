@@ -47,7 +47,7 @@
          }
          this.timer = 0
 
-         Array.prototype.forEach.call(this.containers, (e, i) => this.createContainer(e))
+         Array.prototype.forEach.call(this.containers, (e) => this.createContainer(e))
          return this
      }
 
@@ -195,7 +195,7 @@
          container.innerHTML = template.join(separator)
 
          if (this.config.animation) {
-             Array.prototype.forEach.call(container.querySelectorAll('.lightcountdown__digit'), (e, i) => {
+             Array.prototype.forEach.call(container.querySelectorAll('.lightcountdown__digit'), (e) => {
                  e.style.animationDuration = this.config.animationDuration
                  e.addEventListener('animationend', () => {
                      e.classList.remove(...this.config.animation.split(' '))

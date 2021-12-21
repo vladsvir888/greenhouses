@@ -1,0 +1,7 @@
+section {
+    padding: 60px 0;
+
+    @media (max-width: $break_md) {
+        padding: 40px 0;
+    }
+}

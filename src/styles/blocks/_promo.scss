@@ -69,11 +69,7 @@
 
         background-color: get-color('accent');
 
-        transition: background-color $transition-time;
-
         &:hover {
-            background-color: get-color('bgc_hover_link');
-
             .promo__form-icon {
                 transform: translateX(3px);
             }

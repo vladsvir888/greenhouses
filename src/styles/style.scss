@@ -1,7 +1,7 @@
 // helpers
 @import "./helpers/variables";
 @import "./helpers/functions";
-// @import "./helpers/mixins";
+@import "./helpers/mixins";
 
 // base
 @import "./base/font";
@@ -13,8 +13,14 @@
 @import "./components/callback-btn";
 @import "./components/phones";
 @import "./components/hamburger";
+@import "./components/section";
+@import "./components/title";
 
 // blocks
 @import "./blocks/header";
 @import "./blocks/menu";
 @import "./blocks/promo";
+@import "./blocks/advantages";
+@import "./blocks/difference";
+@import "./blocks/about";
+@import "./blocks/buy";
