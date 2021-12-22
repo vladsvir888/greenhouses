@@ -82,7 +82,8 @@
 
         >* {
             &:not(:nth-last-of-type(-n + 2)) {
-                margin-bottom: 50px;
+                // margin-bottom: 50px;
+                margin-bottom: 20px; // if you use bootstrap
 
                 @media (max-width: $break_xl) {
                     margin-bottom: 30px;
@@ -113,7 +114,8 @@
         }
 
         >* {
-            max-width: 250px;
+            // max-width: 250px;
+            max-width: 240px; // if you use bootstrap
 
             @media (max-width: $break_xl) {
                 max-width: 100%;
@@ -150,6 +152,7 @@
 
         text-transform: uppercase;
         font-weight: 500;
+        font-size: 17px; // if you use bootstrap
     }
 
     &__item-descr {

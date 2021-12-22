@@ -17,7 +17,7 @@
     <header id="header" class="header">
         <div class="header__top">
             <div class="container header__container-top">
-                <button class="cities-btn btn header__cities-btn" data-popup="popup-cities">
+                <button class="cities-btn btn header__cities-btn" data-bs-toggle="modal" data-bs-target="#modalCities">
                     <svg xmlns="http://www.w3.org/2000/svg" width="12" height="19" viewBox="0 0 12.9 19.9" data-svg="map" fill="#fff">
                         <path d="M6 19.7a.6.6 0 0 0 1 0c21-26.2-22.2-26.3-1 0zM3.3 7a3.3 3.3 0 1 1 6.6 0 3.3 3.3 0 1 1-6.6 0z"></path>
                     </svg>
@@ -29,7 +29,7 @@
                     <a href="tel:+79253252858" class="phones__phone">+7 (925) 325-28-58</a>
                     <p class="phones__text">Принимаем звонки без выходных</p>
                 </div>
-                <button class="callback-btn btn" data-popup="popup-callback">
+                <button class="callback-btn btn" data-bs-toggle="modal" data-bs-target="#modalCallback">
                     <svg class="callback-btn__icon" xmlns="http://www.w3.org/2000/svg" width="18" height="20" viewBox="0 0 18 20.1" data-svg="phone" fill="#545454">
                         <path d="M17.7 16.6l-2.9 3.2C11.4 21.7.1 12.6 0 4.7c0-1 0-1 3-4.4a.8.8 0 0 1 1.4.2C7 6 7.1 5.3 5.3 7.3a.4.4 0 0 0 0 .1c-.2 1.3 3.1 5.8 5.6 6.7h.5c2-2.3 1.2-2.2 6.1 1a1 1 0 0 1 .2 1.5z"></path>
                     </svg>
@@ -40,7 +40,7 @@
         <div class="header__bottom">
             <div class="container header__container-bottom">
                 <div class="hamburger">
-                    <span class="hamburger__item"></span>
+                    <span class="hamburger__item">1</span>
                     <span class="hamburger__item"></span>
                     <span class="hamburger__item"></span>
                 </div>
@@ -398,7 +398,7 @@
                 <div class="footer__text">
                     Есть вопросы? Звоните нам или закажите звонок, наши специалисты проконсультируют вас по всем вопросам!
                 </div>
-                <button class="callback-btn btn" data-popup="popup-callback">
+                <button class="callback-btn btn" data-bs-toggle="modal" data-bs-target="#modalCallback">
                     <svg class="callback-btn__icon" xmlns="http://www.w3.org/2000/svg" width="18" height="20" viewBox="0 0 18 20.1" data-svg="phone" fill="#545454">
                         <path d="M17.7 16.6l-2.9 3.2C11.4 21.7.1 12.6 0 4.7c0-1 0-1 3-4.4a.8.8 0 0 1 1.4.2C7 6 7.1 5.3 5.3 7.3a.4.4 0 0 0 0 .1c-.2 1.3 3.1 5.8 5.6 6.7h.5c2-2.3 1.2-2.2 6.1 1a1 1 0 0 1 .2 1.5z"></path>
                     </svg>
@@ -443,7 +443,7 @@
                     </li>
                 </ul>
             </nav>
-            <button class="cities-btn btn popup-menu__cities-btn" data-popup="popup-cities">
+            <button class="cities-btn btn popup-menu__cities-btn" data-bs-toggle="modal" data-bs-target="#modalCities">
                 <svg xmlns="http://www.w3.org/2000/svg" width="12" height="19" viewBox="0 0 12.9 19.9" data-svg="map" fill="#545454">
                     <path d="M6 19.7a.6.6 0 0 0 1 0c21-26.2-22.2-26.3-1 0zM3.3 7a3.3 3.3 0 1 1 6.6 0 3.3 3.3 0 1 1-6.6 0z"></path>
                 </svg>
@@ -453,7 +453,7 @@
                 <a href="tel:+74993902659" class="phones__phone popup-menu__phone">+7 (499) 390-26-59</a>
                 <a href="tel:+79253252858" class="phones__phone popup-menu__phone">+7 (925) 325-28-58</a>
             </div>
-            <button class="callback-btn btn" data-popup="popup-callback">
+            <button class="callback-btn btn" data-bs-toggle="modal" data-bs-target="#modalCallback">
                 <svg class="callback-btn__icon" xmlns="http://www.w3.org/2000/svg" width="18" height="20" viewBox="0 0 18 20.1" data-svg="phone" fill="#545454">
                     <path d="M17.7 16.6l-2.9 3.2C11.4 21.7.1 12.6 0 4.7c0-1 0-1 3-4.4a.8.8 0 0 1 1.4.2C7 6 7.1 5.3 5.3 7.3a.4.4 0 0 0 0 .1c-.2 1.3 3.1 5.8 5.6 6.7h.5c2-2.3 1.2-2.2 6.1 1a1 1 0 0 1 .2 1.5z"></path>
                 </svg>
@@ -463,6 +463,71 @@
         </div>
     </div>
     <!-- /.popup-menu -->
+
+    <!-- modal-callback -->
+    <div class="modal fade modal-callback" id="modalCallback">
+        <div class="modal-dialog">
+            <div class="modal-content modal__content">
+                <h2 class="modal-title modal__title">Перезвонить Вам?</h2>
+                <div class="modal__descr">Введите в форму Ваше имя и телефон. Мы свяжемся с Вами в ближайшее время!</div>
+                <form action="/" autocomplete="off">
+                    <div class="mb-3">
+                      <label for="name" class="form-label">
+                          Ваше имя
+                        </label>
+                      <input type="text" class="form-control modal-callback__input" id="name">
+                    </div>
+                    <div class="mb-3">
+                      <label for="tel" class="form-label">
+                          Ваш телефон <span class="modal-callback__span">*</span>
+                        </label>
+                      <input type="text" class="form-control modal-callback__input" id="tel" required>
+                    </div>
+                    <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">
+                          Я принимаю условия <a class="modal-callback__link" href="#">соглашения</a>
+                        </label>
+                    </div>
+                    <button type="submit" class="btn modal-callback__btn">Заказать звонок</button>
+                  </form>
+                <button type="button" class="btn-close modal__close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+        </div>
+    </div>
+    <!-- /.modal-callback -->
+
+    <!-- modal-cities -->
+    <div class="modal fade modal-cities" id="modalCities">
+        <div class="modal-dialog">
+            <div class="modal-content modal__content">
+                <h2 class="modal-title modal__title">Выберите город</h2>
+                <div class="modal__descr">Выберите наш филиал в ближайшем к Вам городе.</div>
+                <ul>
+                    <li>
+                        <a class="is-active" href="#">Минск</a>
+                    </li>
+                    <li>
+                        <a href="#">Брест</a>
+                    </li>
+                    <li>
+                        <a href="#">Могилев</a>
+                    </li>
+                    <li>
+                        <a href="#">Гомель</a>
+                    </li>
+                    <li>
+                        <a href="#">Гродно</a>
+                    </li>
+                    <li>
+                        <a href="#">Витебск</a>
+                    </li>
+                </ul>
+                <button type="button" class="btn-close modal__close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+        </div>
+    </div>
+    <!-- /.modal-cities -->
 
     <script src="./dist/bundle.js"></script>
 </body>

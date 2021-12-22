@@ -20,6 +20,7 @@
 @import "./components/location";
 @import "./components/map";
 @import "./components/top-btn";
+@import "./components/modal-bootstrap";
 
 // blocks
 @import "./blocks/header";
@@ -32,3 +33,5 @@
 @import "./blocks/contacts";
 @import "./blocks/footer";
 @import "./blocks/popup-menu";
+@import "./blocks/modal-callback";
+@import "./blocks/modal-cities";

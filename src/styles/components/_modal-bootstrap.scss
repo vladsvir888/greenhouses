@@ -1,0 +1,23 @@
+.modal .modal__content {
+    position: relative;
+
+    padding: 40px;
+    flex-direction: column;
+}
+
+.modal .modal__title {
+    margin-bottom: 20px;
+
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.modal .modal__descr {
+    margin-bottom: 10px;
+}
+
+.modal .modal__close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}

@@ -1,0 +1,24 @@
+.modal-cities li {
+    margin-bottom: 10px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.modal-cities a {
+    color: #56a131;
+
+    border-bottom: 1px dotted #56a131;
+
+    &:hover {
+        border-bottom: none;
+    }
+}
+
+.modal-cities .is-active {
+    color: get-color('text');
+    font-weight: 700;
+
+    border-bottom: none;
+}

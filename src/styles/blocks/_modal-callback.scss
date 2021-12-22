@@ -1,0 +1,32 @@
+.modal-callback .modal-callback__link {
+    color: #56a131;
+    border-bottom: 1px dotted #56a131;
+}
+
+.modal-callback .modal-callback__span {
+    color: #ff0400;
+}
+
+.modal-callback .modal-callback__btn {
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    padding: 12px 20px;
+
+    color: get-color('text');
+    font-weight: 500;
+
+    background-color: get-color('accent');
+    border-radius: 20px;
+
+    transition: background-color $transition-time;
+
+    &:hover {
+        background-color: #ffff00;
+    }
+}
+
+.modal-callback .modal-callback__input:focus {
+    box-shadow: none;
+    border-color: #56a131;
+}

@@ -1,3 +1,5 @@
+import util from './util';
+
 export default () => {
     const menuLinks = document.querySelectorAll('.menu__link');
 
@@ -14,7 +16,10 @@ export default () => {
             scrollToSectionClass.scrollIntoView({
                 block: 'center', 
                 behavior: 'smooth',
-            })
+            });
+
+            util.closePopup();
+            util.toggleScroll(); 
         });
     })
 }
