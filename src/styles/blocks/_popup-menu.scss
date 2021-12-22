@@ -1,0 +1,125 @@
+.popup-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.4);
+    overflow: auto;
+    opacity: 0;
+    visibility: hidden;
+
+    transition: opacity 0.8s;
+
+    &__wrap {
+        position: relative;
+        top: 0;
+        left: -100%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 300px;
+        min-height: 100vh;
+        padding: 100px 20px 20px;
+
+        background-color: #fff;
+
+        transition: all 0.8s;
+
+        >* {
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+        }
+
+        @media (max-width: 400px) {
+            width: 250px;
+            padding: 50px 20px 20px;
+        }
+    }
+
+    &__nav {
+        width: 100%;
+    }
+
+    &__list {
+        flex-direction: column;
+
+        text-align: left;
+    }
+
+    &__item {
+        padding: 15px 0;
+
+        border-bottom: 1px solid rgba(0, 0, 0, .1);
+    }
+
+    &__phone {
+        margin-bottom: 10px;
+
+        color: get-color('text');
+        font-weight: 400;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__cities-btn {
+        color: get-color('text');
+    }
+
+    &__cities-text {
+        border-bottom: 1px dotted get-color('text');
+    }
+
+    &__btn-close {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+
+        height: 30px;
+        margin-bottom: 0;
+        padding: 0;
+        width: 20px;
+
+        background: none;
+        border: none;
+        cursor: pointer;
+
+        &::before,
+        &::after {
+            left: 0;
+            position: absolute;
+            right: 0;
+            top: 23px;
+
+            height: 2px;
+
+            background-color: get-color('text');
+
+            content: "";
+        }
+
+        &::after {
+            transform: translateY(-10px) rotate(45deg);
+        }
+
+        &::before {
+            transform: translateY(-10px) rotate(-45deg);
+        }
+    }
+}
+
+.popup-menu.is-active {
+    opacity: 1;
+    visibility: visible;
+
+    .popup-menu__wrap {
+        left: 0;
+    }
+}

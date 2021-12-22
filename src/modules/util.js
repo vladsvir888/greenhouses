@@ -36,7 +36,7 @@ export default {
   },
 
   closePopup() {
-    document.querySelector('.popup.is-active').classList.remove('is-active');
+    document.querySelector('.popup-menu.is-active').classList.remove('is-active');
   },
 
   hamburger: document.querySelector('.hamburger'),

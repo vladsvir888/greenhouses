@@ -1,0 +1,40 @@
+.footer {
+    >* {
+        padding: 40px 0;
+
+        @media (max-width: $break_sm) {
+            padding: 20px 0;
+        }
+    }
+
+    &__top {
+        color: #fff;
+        text-align: center;
+        line-height: 20px;
+
+        background: get-color('footer_top');
+    }
+
+    &__top-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @media (max-width: $break_xl) {
+            flex-direction: column;
+        }
+    }
+
+    &__text {
+        @media (max-width: $break_xl) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__bottom {
+        text-align: center;
+        color: #fff;
+
+        background: get-color('footer_bottom');
+    }
+}

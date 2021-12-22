@@ -14,16 +14,16 @@
 <body>
 
     <!-- header -->
-    <header class="header">
+    <header id="header" class="header">
         <div class="header__top">
             <div class="container header__container-top">
-                <button class="cities-btn btn" data-popup="popup-cities">
+                <button class="cities-btn btn header__cities-btn" data-popup="popup-cities">
                     <svg xmlns="http://www.w3.org/2000/svg" width="12" height="19" viewBox="0 0 12.9 19.9" data-svg="map" fill="#fff">
                         <path d="M6 19.7a.6.6 0 0 0 1 0c21-26.2-22.2-26.3-1 0zM3.3 7a3.3 3.3 0 1 1 6.6 0 3.3 3.3 0 1 1-6.6 0z"></path>
                     </svg>
-                    <span class="cities-btn__text">Ваш город: Москва</span>
+                    <span class="cities-btn__text header__cities-btn-text">Ваш город: Минск</span>
                 </button>
-                <div class="header__top-text">Производство и продажа <br> теплиц в Москве и МО</div>
+                <div class="header__top-text">Производство и продажа <br> теплиц в Минске и МО</div>
                 <div class="phones">
                     <a href="tel:+74993902659" class="phones__phone">+7 (499) 390-26-59</a>
                     <a href="tel:+79253252858" class="phones__phone">+7 (925) 325-28-58</a>
@@ -53,22 +53,22 @@
                 <nav class="menu">
                     <ul class="menu__list">
                         <li class="menu__item">
-                            <a href="#" class="menu__link">Главная</a>
+                            <a href="#header" class="menu__link">Главная</a>
                         </li>
                         <li class="menu__item">
-                            <a href="#" class="menu__link">Преимущества</a>
+                            <a href="#advantages" class="menu__link">Преимущества</a>
                         </li>
                         <li class="menu__item">
-                            <a href="#" class="menu__link">Каталог</a>
+                            <a href="#catalog" class="menu__link">Каталог</a>
                         </li>
                         <li class="menu__item">
-                            <a href="#" class="menu__link">Отличия</a>
+                            <a href="#difference" class="menu__link">Отличия</a>
                         </li>
                         <li class="menu__item">
-                            <a href="#" class="menu__link">О нас</a>
+                            <a href="#about" class="menu__link">О нас</a>
                         </li>
                         <li class="menu__item">
-                            <a href="#" class="menu__link">Контакты</a>
+                            <a href="#contacts" class="menu__link">Контакты</a>
                         </li>
                     </ul>
                 </nav>
@@ -159,13 +159,11 @@
                     <h3 class="advantages__item-title">Двери и форточки уже приварены</h3>
                 </li>
                 <li class="advantages__item">
-                    <svg class="advantages__item-icon" width="36" height="36" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" data-svg="kit"><g clip-path="url(#clip0)" fill="#56a131"><path d="M6.1 14.45a.4.4 0 100 .78.4.4 0 000-.78z"></path><path d="M17.58 7.42l2.3-2.3a.4.4 0 00-.16-.65l-5.6-1.73a3.9 3.9 0 00-7.35-.3L.27 4.48a.4.4 0 00-.16.65l2.37 2.36-1.5 2.49a.4.4 0 00.22.57l2.16.72v6c0 .17.1.31.25.37l6.26 2.35c.08.02.16.03.25 0l7.03-2.34a.4.4 0 00.27-.37V11.1l2.3-.73a.4.4 0 00.17-.65l-2.3-2.3zM14.3 3.91l-.01-.3 4.58 1.42-1.94 1.95-3.19-1.07c.36-.6.56-1.3.56-2zM7.43 2.89a3.13 3.13 0 115.92 2.04 3.13 3.13 0 01-5.92-2.04zm-6.3 2.13l5.4-1.68a3.94 3.94 0 00.39 2.35L3.07 6.98 1.12 5.02zm.78 4.93l1.23-2.06L9.41 10l-1.23 2.05L1.9 9.95zm7.7 9.1L4.14 17v-5.48c4.3 1.42 4.1 1.38 4.21 1.38a.4.4 0 00.34-.19l.92-1.53v7.87zm.39-9.7L4.2 7.42l3.16-1.05a3.9 3.9 0 005.89.2l2.55.85L10 9.35zm6.64 7.63l-6.25 2.09v-8.2l1.39 1.74c.1.13.26.18.42.13l4.44-1.4v5.64zm-4.42-5.07l-1.57-1.95 6.28-2.1 1.95 1.96-6.66 2.1z"></path><path d="M8.57 15.32l-.86-.33a.4.4 0 00-.28.74l.87.32a.4.4 0 10.27-.73zM8.57 16.99l-2.34-.88a.4.4 0 10-.27.73l2.34.88a.4.4 0 10.27-.73zM12.62 2.46a.4.4 0 00-.55 0L10 4.53l-.5-.5a.4.4 0 00-.56.54l.78.78c.16.16.4.16.56 0l2.34-2.34a.4.4 0 000-.55z"></path></g><defs><clipPath id="clip0"><path fill="#fff" d="M0 0h20v20H0z"></path></clipPath></defs></svg>
+                    <svg class="advantages__item-icon" width="36" height="36" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" data-svg="kit"><g clip-path="url(#clip1)" fill="#56a131"><path d="M6.1 14.45a.4.4 0 100 .78.4.4 0 000-.78z"></path><path d="M17.58 7.42l2.3-2.3a.4.4 0 00-.16-.65l-5.6-1.73a3.9 3.9 0 00-7.35-.3L.27 4.48a.4.4 0 00-.16.65l2.37 2.36-1.5 2.49a.4.4 0 00.22.57l2.16.72v6c0 .17.1.31.25.37l6.26 2.35c.08.02.16.03.25 0l7.03-2.34a.4.4 0 00.27-.37V11.1l2.3-.73a.4.4 0 00.17-.65l-2.3-2.3zM14.3 3.91l-.01-.3 4.58 1.42-1.94 1.95-3.19-1.07c.36-.6.56-1.3.56-2zM7.43 2.89a3.13 3.13 0 115.92 2.04 3.13 3.13 0 01-5.92-2.04zm-6.3 2.13l5.4-1.68a3.94 3.94 0 00.39 2.35L3.07 6.98 1.12 5.02zm.78 4.93l1.23-2.06L9.41 10l-1.23 2.05L1.9 9.95zm7.7 9.1L4.14 17v-5.48c4.3 1.42 4.1 1.38 4.21 1.38a.4.4 0 00.34-.19l.92-1.53v7.87zm.39-9.7L4.2 7.42l3.16-1.05a3.9 3.9 0 005.89.2l2.55.85L10 9.35zm6.64 7.63l-6.25 2.09v-8.2l1.39 1.74c.1.13.26.18.42.13l4.44-1.4v5.64zm-4.42-5.07l-1.57-1.95 6.28-2.1 1.95 1.96-6.66 2.1z"></path><path d="M8.57 15.32l-.86-.33a.4.4 0 00-.28.74l.87.32a.4.4 0 10.27-.73zM8.57 16.99l-2.34-.88a.4.4 0 10-.27.73l2.34.88a.4.4 0 10.27-.73zM12.62 2.46a.4.4 0 00-.55 0L10 4.53l-.5-.5a.4.4 0 00-.56.54l.78.78c.16.16.4.16.56 0l2.34-2.34a.4.4 0 000-.55z"></path></g><defs><clipPath id="clip1"><path fill="#fff" d="M0 0h20v20H0z"></path></clipPath></defs></svg>
                     <h3 class="advantages__item-title">Грунтозацепы и фурнитура в комплекте</h3>
                 </li>
                 <li class="advantages__item">
                     <svg class="advantages__item-icon" xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 20 20" data-svg="rouble" fill="#56a131"><path d="M10 0A10 10 0 1 1 0 10 10 10 0 0 1 10 0zm8.75 10A8.75 8.75 0 1 0 10 18.75 8.75 8.75 0 0 0 18.75 10z"></path><path d="M8 5.35c3-.19 6 0 5.93 3 0 2.65-2 3.37-4.68 3.36v.64h2.34v1.25H9.22v1.66H8v-1.65h-.93v-1.25H8v-.66h-.93v-1.25H8v-5.1zm4.68 3c0-1.71-1.66-1.87-3.43-1.81v3.94c2.94 0 3.38-.95 3.39-2.14z"></path></svg>
-                        <path d="M14 0h3.2l.4 8.9 1.2-.6V18a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2c0-7.1-1.2-5.2 7.1-9.7v3.1l5.8-3.1v3.1l.8-.4zm1 10.2l1.2-.6-.3-7h-.6zm2.4.3l-5.8 3.1v-3.1l-5.8 3.1v-3.1l-4.1 2.2c-.6.3-.3.8-.3 5.3a.7.7 0 0 0 .7.7h4.1v-4h6.3v4h4.2c1.1 0 .7-1 .7-8.2zm-6.2 8.2V16h-1.1v2.7h1.2zm-2.5 0V16H7.6v2.7h1.1z"></path>
-                    </svg>
                     <h3 class="advantages__item-title">Без предоплаты</h3>
                 </li>
             </ul>
@@ -225,6 +223,9 @@
         </div>
     </section>
     <!-- /.advantages -->
+
+    <!-- catalog -->
+    <!-- /.catalog -->
 
     <!-- difference -->
     <section class="difference section">
@@ -290,11 +291,11 @@
     <section class="about section">
         <div class="container">
             <h2 class="about__title title">
-                «ВОЛЖСКИЕ ТЕПЛИЦЫ» - ТЕПЛИЦЫ И ПАРНИКИ ИЗ ПОЛИКАРБОНАТА В МОСКВЕ И МОСКОВСКОЙ ОБЛАСТИ
+                «ВОЛЖСКИЕ ТЕПЛИЦЫ» - ТЕПЛИЦЫ И ПАРНИКИ ИЗ ПОЛИКАРБОНАТА В МИНСКЕ И МИНСКОЙ ОБЛАСТИ
             </h2>
             <div class="about__wrapper">
                 <div class="about__item">
-                    <p>Мы производим теплицы оптимальные по соотношению «цена - качество» в Москве и Московской области. Мы продаем, доставляем и устанавливаем теплицы из сотового поликарбоната с 2010 года.</p> 
+                    <p>Мы производим теплицы оптимальные по соотношению «цена - качество» в Минске и Минской области. Мы продаем, доставляем и устанавливаем теплицы из сотового поликарбоната с 2010 года.</p> 
                     <p>С 2014 года наша компания производит продукцию под торговой маркой «Волжские теплицы», наш слоган – «Мы работаем с теплом». В свою продукцию мы вкладываем все тепло своих рук, усердный труд и любовь к своему делу. В процессе производства мы постоянно совершенствуем свою продукцию, учитывая пожелания наших заказчиков.</p>
                     <p>«Волжские теплицы» заслужили теплые отзывы садоводов и огородников Марий Эл, Чувашии, Москвы и Московской области и приносят реальный урожай даже на Камчатке!</p>
                     <p>Чтобы радоваться урожаю завтра – закажите у нас теплицу по душе сегодня!</p>
@@ -342,6 +343,126 @@
         </div>
     </section>
     <!-- /.buy -->
+
+    <!-- contacts -->
+    <section class="contacts section">
+        <div class="container">
+            <h2 class="contacts__title title">Волжские теплицы</h2>
+            <div class="contacts__subtitle">Производство и продажа теплиц из поликарбоната в Москве и Московской области</div>
+            <div class="contacts__wrap">
+                <div class="phones contacts__phones">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="20" viewBox="0 0 18 20.1" data-svg="phone" fill="#fff">
+                        <path d="M17.7 16.6l-2.9 3.2C11.4 21.7.1 12.6 0 4.7c0-1 0-1 3-4.4a.8.8 0 0 1 1.4.2C7 6 7.1 5.3 5.3 7.3a.4.4 0 0 0 0 .1c-.2 1.3 3.1 5.8 5.6 6.7h.5c2-2.3 1.2-2.2 6.1 1a1 1 0 0 1 .2 1.5z"></path>
+                    </svg>
+                    <div class="contacts__phones-wrap">
+                        <a href="tel:+74993902659" class="phones__phone contacts__phone">+7 (499) 390-26-59</a>
+                        <a href="tel:+79253252858" class="phones__phone contacts__phone">+7 (925) 325-28-58</a>
+                    </div>
+                </div>
+                <a class="email" href="mailto:info@volga-teplica.ru">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="21" viewBox="0 0 20 14.4" data-svg="mail" fill="#fff"><path d="M10 10L7.5 7.8l-7 6.1c.7.6.3.4 18.1.4a1.4 1.4 0 0 0 1-.4l-7.1-6.1z"></path><path d="M19.5.4a1.4 1.4 0 0 0-1-.4C.7 0 1.1-.2.5.4L10 8.6zM0 1.3v11.8l6.9-5.8zM13.1 7.3l6.9 5.8V1.3z"></path></svg>
+                    <span class="email__text">info@volga-teplica.ru</span>
+                </a>
+                <div class="location">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="19" viewBox="0 0 12.9 19.9" data-svg="map" fill="#fff">
+                        <path d="M6 19.7a.6.6 0 0 0 1 0c21-26.2-22.2-26.3-1 0zM3.3 7a3.3 3.3 0 1 1 6.6 0 3.3 3.3 0 1 1-6.6 0z"></path>
+                    </svg>
+                    <span class="location__text">г. Минск, ул. Советская, 15</span>
+                </div>
+                <ul class="socials">
+                    <li class="socials__social">
+                        <a href="#" class="socials__social-link">
+                            <svg class="socials__social-icon" xmlns="http://www.w3.org/2000/svg" width="25" height="13.75" viewBox="0 0 20 11.4" data-svg="vk" fill="#fff"><path d="M19.8 10.2a9 9 0 0 0-2-2.3c-1.7-1.6-1.4-1.3.6-4 1.2-1.6 1.7-2.6 1.6-3a1.2 1.2 0 0 0-1-.4h-3a.6.6 0 0 0-.7.4 17.4 17.4 0 0 1-1.1 2.4c-1.4 2.3-2 2.4-2.1 2.2-.6-.3-.4-1.3-.4-2 0-2.2.3-3-.7-3.3a9.3 9.3 0 0 0-3.9.1c-.3.2-.6.5-.4.6a1.4 1.4 0 0 1 .9.4 2.9 2.9 0 0 1 .3 1.4s.1 2.5-.5 2.9C6.5 6 4.7 2 4.3 1a.9.9 0 0 0-.7-.5H.6a1 1 0 0 0-.5.2.6.6 0 0 0 0 .5s2.2 5.3 4.7 8a7.4 7.4 0 0 0 6.2 2.2.7.7 0 0 0 .7-.8s0-1.6.7-1.8 1.7 1.5 2.7 2.2a1.9 1.9 0 0 0 1.3.4h2.7s1.4-.1.7-1.2z"></path></svg>
+                        </a>
+                    </li>
+                    <li class="socials__social">
+                        <a href="#" class="socials__social-link">
+                            <svg class="socials__social-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" data-svg="instagram" fill="#fff"><path d="M14.59 0H5.41A5.42 5.42 0 0 0 0 5.41v9.17A5.42 5.42 0 0 0 5.41 20h9.17A5.42 5.42 0 0 0 20 14.59V5.41A5.42 5.42 0 0 0 14.59 0zM10 15.47A5.47 5.47 0 1 1 15.47 10 5.47 5.47 0 0 1 10 15.47zm4-11.26a1.62 1.62 0 0 1 3.23 0 1.62 1.62 0 0 1-3.23 0z"></path><path d="M10 5.7a4.3 4.3 0 1 0 4.3 4.3A4.3 4.3 0 0 0 10 5.7zM15.16 4.21a.44.44 0 0 0 .89 0 .44.44 0 0 0-.89 0z"></path></svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- /.contacts -->
+
+    <!-- map -->
+    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2350.984606684746!2d27.545361315992263!3d53.89647754106215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbcfe7d6e1f02f%3A0x3e3a2ae25ed0b4cb!2z0YPQuy4g0KHQvtCy0LXRgtGB0LrQsNGPIDE1LCDQnNC40L3RgdC6!5e0!3m2!1sru!2sby!4v1640160086967!5m2!1sru!2sby" allowfullscreen="" loading="lazy"></iframe>
+    <!-- /.map -->
+
+    <!-- footer -->
+    <footer class="footer">
+        <h2 class="visually-hidden">Шапка сайта</h2>
+        <div class="footer__top">
+            <div class="container footer__top-container">
+                <div class="footer__text">
+                    Есть вопросы? Звоните нам или закажите звонок, наши специалисты проконсультируют вас по всем вопросам!
+                </div>
+                <button class="callback-btn btn" data-popup="popup-callback">
+                    <svg class="callback-btn__icon" xmlns="http://www.w3.org/2000/svg" width="18" height="20" viewBox="0 0 18 20.1" data-svg="phone" fill="#545454">
+                        <path d="M17.7 16.6l-2.9 3.2C11.4 21.7.1 12.6 0 4.7c0-1 0-1 3-4.4a.8.8 0 0 1 1.4.2C7 6 7.1 5.3 5.3 7.3a.4.4 0 0 0 0 .1c-.2 1.3 3.1 5.8 5.6 6.7h.5c2-2.3 1.2-2.2 6.1 1a1 1 0 0 1 .2 1.5z"></path>
+                    </svg>
+                    <span class="callback-btn__text">Заказать звонок</span>
+                </button>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="container">«Волжские теплицы» © 2015 - 2021</div>
+        </div>
+    </footer>
+    <!-- /.footer -->
+
+    <!-- top-btn -->
+    <button class="top-btn">
+        <svg width="18" height="10" viewBox="0 0 18 10" xmlns="http://www.w3.org/2000/svg" data-svg="totop"><polyline fill="none" stroke="#000" stroke-width="2" points="1 9 9 1 17 9 "></polyline></svg>
+    </button>
+    <!-- /.top-btn -->
+
+    <!-- popup-menu -->
+    <div class="popup-menu">
+        <div class="popup-menu__wrap">
+            <nav class="popup-menu__nav">
+                <ul class="menu__list popup-menu__list">
+                    <li class="menu__item popup-menu__item">
+                        <a href="#header" class="menu__link">Главная</a>
+                    </li>
+                    <li class="menu__item popup-menu__item">
+                        <a href="#advantages" class="menu__link">Преимущества</a>
+                    </li>
+                    <li class="menu__item popup-menu__item">
+                        <a href="#catalog" class="menu__link">Каталог</a>
+                    </li>
+                    <li class="menu__item popup-menu__item">
+                        <a href="#difference" class="menu__link">Отличия</a>
+                    </li>
+                    <li class="menu__item popup-menu__item">
+                        <a href="#about" class="menu__link">О нас</a>
+                    </li>
+                    <li class="menu__item popup-menu__item">
+                        <a href="#contacts" class="menu__link">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="cities-btn btn popup-menu__cities-btn" data-popup="popup-cities">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="19" viewBox="0 0 12.9 19.9" data-svg="map" fill="#545454">
+                    <path d="M6 19.7a.6.6 0 0 0 1 0c21-26.2-22.2-26.3-1 0zM3.3 7a3.3 3.3 0 1 1 6.6 0 3.3 3.3 0 1 1-6.6 0z"></path>
+                </svg>
+                <span class="cities-btn__text popup-menu__cities-text">Ваш город: Минск</span>
+            </button>
+            <div class="phones">
+                <a href="tel:+74993902659" class="phones__phone popup-menu__phone">+7 (499) 390-26-59</a>
+                <a href="tel:+79253252858" class="phones__phone popup-menu__phone">+7 (925) 325-28-58</a>
+            </div>
+            <button class="callback-btn btn" data-popup="popup-callback">
+                <svg class="callback-btn__icon" xmlns="http://www.w3.org/2000/svg" width="18" height="20" viewBox="0 0 18 20.1" data-svg="phone" fill="#545454">
+                    <path d="M17.7 16.6l-2.9 3.2C11.4 21.7.1 12.6 0 4.7c0-1 0-1 3-4.4a.8.8 0 0 1 1.4.2C7 6 7.1 5.3 5.3 7.3a.4.4 0 0 0 0 .1c-.2 1.3 3.1 5.8 5.6 6.7h.5c2-2.3 1.2-2.2 6.1 1a1 1 0 0 1 .2 1.5z"></path>
+                </svg>
+                <span class="callback-btn__text">Заказать звонок</span>
+            </button>
+            <button class="popup-menu__btn-close" aria-label="close"></button>
+        </div>
+    </div>
+    <!-- /.popup-menu -->
 
     <script src="./dist/bundle.js"></script>
 </body>

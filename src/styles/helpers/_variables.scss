@@ -1,12 +1,14 @@
 $colors: (
-    'header_top': #56a131,
-    'text': #545454,
-    'accent': #ffe600,
-    'menu-link_hover': #56a131,
-    'difference_bg': #eeeedd,
-    'advantages_bg': #e1ffa6,
-    'buy_bg': #eeeedd,
-    // 'callback-link_hover': #fff170,
+    'header_top': #56a131, // фон верхней шапки
+    'text': #545454, // цвет текста
+    'accent': #ffe600, // акцентный цвет (кнопки)
+    'menu-link_hover': #56a131, // ховер-эффект ссылок в навигационном меню
+    'difference_bg': #eeeedd, // фон секции "отличия"
+    'advantages_bg': #e1ffa6, // фон секции "преимущества"
+    'buy_bg': #eeeedd, // фон секции "как купить теплицу"
+    'contacts_bg': #56a131, // фон секции "контакты"
+    'footer_top': #56a131, // фон верхнего футера
+    'footer_bottom': #555555, // фон нижнего футера
 );
 
 $break_xl: 1200px;
