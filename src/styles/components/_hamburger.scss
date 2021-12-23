@@ -11,6 +11,8 @@
         width: 100%;
 
         background-color: get-color('text');
+
+        pointer-events: none;
     }
 
     @media (max-width: $break_xl) {
