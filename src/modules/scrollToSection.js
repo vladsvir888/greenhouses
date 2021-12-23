@@ -1,5 +1,3 @@
-import util from './util';
-
 export default () => {
     const menuLinks = document.querySelectorAll('.menu__link');
 
@@ -18,8 +16,12 @@ export default () => {
                 behavior: 'smooth',
             });
 
-            util.closePopup();
-            util.toggleScroll(); 
+            const activePopup = document.querySelector('.popup-menu.is-active');
+
+            if (activePopup) {
+                activePopup.classList.remove('is-active');
+                document.body.classList.remove('no-scroll');
+            }
         });
     })
 }

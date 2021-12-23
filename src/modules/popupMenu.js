@@ -1,27 +1,45 @@
-import util from './util';
 
 export default () => {
-    util.hamburger.addEventListener('click', () => {
-        util.popupMenu.classList.add('is-active');
-        util.toggleScroll();
-    });
+    const hamburger = document.querySelector('.hamburger');
+    const closeButton = document.querySelector('.popup-menu__btn-close');
+    const mobileMenu = document.querySelector('.popup-menu');
+    const overlay = document.querySelector('.overlay');
 
-    document.querySelector('.popup-menu__btn-close').addEventListener('click', () => {
-        util.closePopup();
-        util.toggleScroll(); 
-    });
+    if (hamburger) {
+        hamburger.addEventListener('click', ()=> {      
+            openMenu();
+        });  
+    }  
 
-    util.popupMenu.addEventListener('click', (e) => {
-        if (e.target.classList.contains('popup-menu')) {
-            util.closePopup();
-            util.toggleScroll();
-        }
-    });
-
-    util.body.addEventListener('keydown', (e) => {
-        if (e.key !== 'Escape') return;
+    if (closeButton) {
+        closeButton.addEventListener('click', () => {
+            closeMenu();      
+        });
+    }  
     
-        util.closePopup();
-        util.toggleScroll();
-    });    
+    if (overlay) {
+        overlay.addEventListener('click', (e) => {
+            if (e.target.classList.contains('overlay')) {
+                closeMenu();
+            }
+        });
+    }
+
+    function openMenu(){
+        mobileMenu.classList.add('is-active');
+        document.body.classList.add('no-scroll');
+        window.addEventListener('keydown', pressedEscHandler);
+    }
+
+    function closeMenu() {
+        mobileMenu.classList.remove('is-active');
+        document.body.classList.remove('no-scroll');
+        window.removeEventListener('keydown', pressedEscHandler);     
+    }
+
+    function pressedEscHandler(e) {
+        if(e.key === 'Escape'){
+            closeMenu();
+        }
+    }
 }

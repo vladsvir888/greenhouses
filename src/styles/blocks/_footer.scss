@@ -1,9 +1,13 @@
 .footer {
-    >* {
-        padding: 40px 0;
+    position: relative;
 
-        @media (max-width: $break_sm) {
-            padding: 20px 0;
+    >* {
+        &:not(:last-child) {
+            padding: 40px 0;
+
+            @media (max-width: $break_sm) {
+                padding: 20px 0;
+            }
         }
     }
 

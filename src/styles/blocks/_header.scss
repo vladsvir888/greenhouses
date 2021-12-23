@@ -76,7 +76,11 @@
     }
 
     &__phone {
-        color: #545454;
+        color: get-color('text');
+
+        &:hover { // if you use bootstrap
+            color: get-color('text');
+        }
     }
 
     &__cities-btn {
@@ -97,8 +101,8 @@
 // styles for fixed header
 .header__fixed {
     position: fixed;
-    top: 0;
     left: 0;
+    top: 0;
     width: 100%;
     z-index: 10;
 

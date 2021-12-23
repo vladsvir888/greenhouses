@@ -10,13 +10,7 @@
     border-radius: 20px;
 
     &__icon {
-        transition: transform 0.8s;
-    }
-
-    &:hover {
-        .callback-btn__icon {
-            transform: rotate(360deg);
-        }
+        animation: change-size 2s infinite;
     }
 
     &__text {

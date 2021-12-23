@@ -1,0 +1,25 @@
+.catalog {
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 50px 0 -20px;
+    }
+
+    &__card {
+        width: 30%;
+        margin-bottom: 20px;
+
+        box-shadow: 0 2px 18px rgb(0 0 0 / 11%);
+    }
+
+    &__card-title {
+        font-size: 17px;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+
+    &__card-main {
+        padding: 20px;
+    }
+}
