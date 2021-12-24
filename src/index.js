@@ -8,14 +8,16 @@ import LazyLoad from "vanilla-lazyload";
 // animate.css
 import "animate.css";
 
-// normalize.css
-import "normalize.css";
+// glightbox
+import 'glightbox/dist/css/glightbox.min.css';
+// import GLightbox from 'glightbox';
 
 // styles
 import "./styles/style.scss";
 
 // modules
 import wow from "./modules/wow.js";
+import glightbox from "./modules/glightbox";
 import form from "./modules/form";
 import header from "./modules/header";
 import topBtn from "./modules/topBtn";
@@ -27,12 +29,19 @@ import slider from "./modules/slider";
 form();
 document.addEventListener('DOMContentLoaded', () => {
   wow.init();
+  glightbox.init();
   header();
   topBtn();
   scrollToSection();
   popupMenu();
   calc();
   slider();
+  
+  // eslint-disable-next-line no-unused-vars
+  // const lightbox = GLightbox({
+  //   touchNavigation: true,
+  //   loop: false,
+  // });
 
   // eslint-disable-next-line no-unused-vars
   const lazyLoadInstance = new LazyLoad({

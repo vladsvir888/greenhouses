@@ -20,6 +20,32 @@
             margin-right: 0;
             margin-bottom: 30px;
         }
+
+        .swiper-button-next, .swiper-button-prev {
+            padding: 25px;
+    
+            color: #fff;
+        
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 50%;
+
+            @media (max-width: 500px) {
+                padding: 0;
+
+                color: #000;
+
+                background: transparent;
+                border-radius: none;
+            }
+        }
+    
+        .swiper-button-next:after, .swiper-button-prev:after {
+            font-size: 15px;
+
+            @media (max-width: 500px) {
+                font-size: 20px;
+            }
+        }
     }
 
     &__callback-form {
@@ -71,10 +97,19 @@
 
 .swiper.gallery-top {
     height: 350px;
+
+    @media (max-width: 500px) {
+        height: 200px;
+    }
 }
 
 .swiper.gallery-thumbs {
+    height: 100px;
     margin-top: 20px;
+
+    @media (max-width: 500px) {
+        height: 60px;
+    }
 }
 
 .swiper-slide img {
@@ -84,39 +119,19 @@
     cursor: pointer;
 }
 
-.swiper-slide .modal-card__top-icon {
+.swiper-slide .modal-card__icon {
     position: absolute;
-    top: -10px;
-    right: -20px;
-    z-index: 1000;
+    top: 0;
+    right: 0;
 
-    width: 85px;
-    height: 85px;
-}
-
-.swiper-slide .modal-card__thumb-img {
-    height: 100px;
+    width: 70px;
+    height: 70px;
 }
 
 .gallery-thumbs__slide {
-    opacity: 0.4;
+    opacity: 0.5;
 }
 
 .swiper-slide-thumb-active {
     opacity: 1;
-}
-
-.modal-card__slider {
-    .swiper-button-next, .swiper-button-prev {
-        padding: 25px;
-
-        color: #fff;
-    
-        background: rgba(0, 0, 0, 0.7);
-        border-radius: 50%;
-    }
-
-    .swiper-button-next:after, .swiper-button-prev:after {
-        font-size: 15px;
-    }
 }

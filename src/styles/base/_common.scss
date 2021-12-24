@@ -59,7 +59,7 @@ a {
     box-shadow: none;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1400px) {
     .wow {
         animation-name: none !important;
         visibility: visible !important;
@@ -75,6 +75,7 @@ body {
     font-weight: 400;
     font-size: 15px;
     color: get-color('text');
+    overflow-x: hidden;
 }
 
 .container {
@@ -97,7 +98,7 @@ body {
 }
 
 // animation for phone icon 
-@keyframes change-size {
+@keyframes change-position {
     10% {
         transform:rotate(5deg);
     }
@@ -125,4 +126,24 @@ body {
     100% {
         transform:rotate(-5deg);      
     }
+}
+
+// animation for slide promo-content to the left
+@keyframes slide-left {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.slide-left {
+    animation-name: slide-left;
+    animation-duration: .5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: both;
 }

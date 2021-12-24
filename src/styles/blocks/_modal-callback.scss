@@ -30,3 +30,14 @@
     box-shadow: none;
     border-color: #56a131;
 }
+
+.modal-callback .form-check-input:checked {
+    background-color: green;
+    border-color: green;
+}
+
+.modal-callback .form-check-input:focus {
+    border-color: none;
+    outline: 0;
+    box-shadow: none;
+}
