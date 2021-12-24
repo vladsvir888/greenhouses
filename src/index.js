@@ -21,7 +21,8 @@ import header from "./modules/header";
 import topBtn from "./modules/topBtn";
 import scrollToSection from "./modules/scrollToSection";
 import popupMenu from "./modules/popupMenu";
-import calculator from "./modules/calculator";
+import calc from "./modules/calc";
+import slider from "./modules/slider";
 
 form();
 document.addEventListener('DOMContentLoaded', () => {
@@ -30,7 +31,8 @@ document.addEventListener('DOMContentLoaded', () => {
   topBtn();
   scrollToSection();
   popupMenu();
-  calculator();
+  calc();
+  slider();
 
   // eslint-disable-next-line no-unused-vars
   const lazyLoadInstance = new LazyLoad({

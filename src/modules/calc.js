@@ -1,31 +1,6 @@
-export default () => {
-  const calculator = {
-    products: {
-      "product": {
-        "4": {
-          "1": 100,
-          "0.67": 800,
-          "0.5": 600,
-        },
-        "6": {
-          "1": 1000,
-          "0.67": 4000,
-          "0.5": 2000,
-        },
-        "8": {
-          "1": 2000,
-          "0.67": 6000,
-          "0.5": 4000,
-        },
-        "10": {
-          "1": 1000,
-          "0.67": 8000,
-          "0.5": 6000,
-        }
-      }
-    },
-  };
+import calcData from './data';
 
+export default () => {
   [].forEach.call(document.querySelectorAll(".calculator"), function(form) {
     form.addEventListener('change', function() {
 
@@ -41,13 +16,14 @@ export default () => {
         let sum = 0;
 
         try{
-            sum += calculator.products[product.value][length.value][interval.value];
+            sum += calcData.products[product.value][length.value][interval.value];
+            
             // [].forEach.call(additional, function(el){
             //     sum += calculator.additional[el.value]
             // });
 
-            const animateBlock = form.querySelector('.catalog__price');
-            const out = form.querySelector('.calculator-price');
+            const animateBlock = form.querySelector('.price-block');
+            const out = form.querySelector('.calculator-price-new');
             const outOld = form.querySelector('.calculator-price-old');
 
             const animationName = 'pulse';
@@ -76,5 +52,5 @@ export default () => {
         }catch(e){console.error(e);}
     });
     form.dispatchEvent(new Event('change'));
-});
+  });
 }

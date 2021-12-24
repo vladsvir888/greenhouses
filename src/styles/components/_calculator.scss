@@ -48,4 +48,40 @@
 
         background-color: #00a21d;
     }
+
+    &__price-start {
+        display: flex;
+    }
+
+    &__price-old {
+        margin-right: 5px;
+
+        text-decoration: line-through;
+    }
+
+    &__price-discount {
+        padding: 0 5px 0 15px;
+        margin-left: 15px;
+
+        text-align: center;
+
+        background-color: get-color('accent');
+        clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+
+        @media (max-width: $break_xl) {
+            margin-left: 5px;
+        }
+    }
+
+    &__price-new {
+        font-weight: 700;
+        font-size: 20px;
+        color: red;
+    }
+
+    &__price-new-currency {
+        font-weight: 700;
+        font-size: 20px;
+        color: red;
+    }
 }

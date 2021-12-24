@@ -9,8 +9,10 @@
     background: get-color('accent');
     border-radius: 20px;
 
-    &__icon {
-        animation: change-size 2s infinite;
+    &:hover {
+        .callback-btn__icon {
+            animation: change-size 2s infinite; 
+        }
     }
 
     &__text {

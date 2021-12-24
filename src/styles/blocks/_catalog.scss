@@ -62,8 +62,10 @@
         }
     }
 
+    // card-header
     &__card-header {
         position: relative;
+        margin-bottom: 20px;
     }
 
     &__card-icon {
@@ -75,11 +77,20 @@
         height: 85px;
     }
 
-    &__card-main {
-        margin-top: 20px;
+    &__card-img {
+        height: 230px;
+        width: 100%;
 
+        @media (max-width: 500px) {
+            height: auto;
+        }
+    }
+    // ./card-header
+
+    // card-main
+    &__card-main {
         > * {
-            margin-bottom: 15px;
+            margin-bottom: 20px;
         }
     }
 
@@ -90,15 +101,6 @@
 
         @media (max-width: 500px) {
             font-size: 17px;
-        }
-    }
-
-    &__card-img {
-        height: 230px;
-        width: 100%;
-
-        @media (max-width: 500px) {
-            height: auto;
         }
     }
 
@@ -114,44 +116,11 @@
         font-weight: 700;
     }
 
-    &__card-footer {
-        margin-bottom: 20px;
-    }
-
-    &__footer-top {
+    &__price-wrap {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin-bottom: 20px;
-    }
-
-    &__footer-price-wrap {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    &__price-discount {
-        padding: 0 5px 0 15px;
-        margin-left: 15px;
-
-        text-align: center;
-
-        background-color: get-color('accent');
-        clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
-
-        @media (max-width: $break_xl) {
-            margin-left: 5px;
-        }
-    }
-
-    &__footer-old-price {
-        text-decoration: line-through;
-    }
-
-    &__footer-price-span {
-        font-weight: 700;
-        color: red;
-        font-size: 20px;
+        margin-bottom: 0;
     }
 
     &__modal-icon {
@@ -185,7 +154,13 @@
     &__modal-span {
         padding-right: 8px;
     }
+    // ./card-main
 
+    // card-footer
+    &__card-footer {
+        margin-bottom: 20px;
+    }
+    
     &__footer-form {
         display: flex;
         align-items: center;
@@ -230,4 +205,5 @@
     &__callback-span {
         padding-right: 8px;
     }
+    // ./card-footer
 }
