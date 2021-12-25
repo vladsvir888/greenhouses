@@ -23,7 +23,7 @@
         flex-wrap: wrap;
         margin-top: 40px;
 
-        @media (max-width: $break_lg) {
+        @media (max-width: $break_md) {
             font-size: 13px;
             flex-direction: column;
 

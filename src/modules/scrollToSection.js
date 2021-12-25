@@ -12,7 +12,7 @@ export default () => {
             if (scrollToSectionClass === null) return;
 
             scrollToSectionClass.scrollIntoView({
-                block: 'center', 
+                block: 'start', 
                 behavior: 'smooth',
             });
 

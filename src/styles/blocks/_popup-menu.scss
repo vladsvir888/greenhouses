@@ -67,10 +67,6 @@
         &:last-child {
             margin-bottom: 0;
         }
-
-        &:hover { // if you use bootstrap
-            color: get-color('text');
-        }
     }
 
     &__cities-btn {

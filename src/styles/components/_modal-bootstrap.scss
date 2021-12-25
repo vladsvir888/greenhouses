@@ -4,6 +4,10 @@
 
         padding: 40px;
         flex-direction: column;
+
+        @media (max-width: $break_sm) {
+            padding: 30px;
+        }
     }
 
     &__title {
