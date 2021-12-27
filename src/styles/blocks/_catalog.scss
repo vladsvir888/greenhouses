@@ -139,6 +139,8 @@
         border-radius: 25px;
 
         &:hover { 
+            color: #fff; // if you use bootstrap
+            
             .catalog__modal-icon {
                 transform: translateX(2px);
             }

@@ -46,6 +46,18 @@ img {
 
 a {
     text-decoration: none;
+
+    transition: color 0.3s;
+
+    &:hover { // if you use bootstrap
+        color: rgba(255, 255, 255, 0.8);
+    }
+}
+
+.btn {
+    &:hover {
+        color: get-color('text');
+    }
 }
 
 // disable wow + animate.css

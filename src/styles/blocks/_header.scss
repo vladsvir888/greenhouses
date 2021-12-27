@@ -77,6 +77,10 @@
 
     &__phone {
         color: get-color('text');
+
+        &:hover {
+            color: get-color('text'); // if you use bootstrap
+        }
     }
 
     &__cities-btn {
